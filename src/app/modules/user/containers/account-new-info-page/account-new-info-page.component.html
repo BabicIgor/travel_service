@@ -1,0 +1,44 @@
+<h1 class="text-center">Account Info</h1>
+
+<h4 class="text-center text-complete">Group Leader</h4>
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+        <account-form [account]="account"></account-form>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+
+<h4 class="text-center text-complete">Group</h4>
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+        <group-form [group]="group" [packages]="packageItems$ | async">
+        </group-form>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+
+        <div class="form-group row">
+            <label class="col-xs-3 text-right" for="lstPackage"></label>
+            <div class="col-xs-4 text-center">
+                <a (click)="create()" alt="create package" class="btn" style="border-color: transparent">Create Custom Package</a>
+            </div>
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-4  text-center">
+                <a (click)="select()" alt="Choose package" class="btn" style="border-color: transparent">Consult With Agent</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="bottom-navs text-center">
+    <a (click)="back()">Back</a>
+</div>

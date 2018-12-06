@@ -1,0 +1,400 @@
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 0;
+}
+
+input[type="checkbox"] + label {
+  margin: 0;
+  line-height: 30px;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto;
+  width: 82px;
+  height: 61px;
+}
+
+.page-content-wrapper {
+  padding-top: 10px;
+}
+
+.app-view .content {
+  padding-top: 0px !important;
+}
+
+.step-flow {
+  margin: 20px auto 15px;
+  width: 294px;
+}
+
+.booking-page-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.booking-name {
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;  
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  top: 50%;
+  width: calc(100% - 30px);
+  z-index: 10;
+  max-height: 360px;
+  overflow: hidden;
+  transform: translateY(-50%);
+  transition: all .3s;
+}
+
+.accommodation .booking-name .accommodation-text {
+  font-size: 15px;
+  padding: 0 10px;
+  display: none;
+}
+
+.accommodation:hover img {
+  transition: all .3s;
+}
+
+.accommodation:hover img {
+  opacity: 0.6;
+}
+
+.accommodation:hover .booking-name .accommodation-text {
+  display: block;
+}
+
+.carousel-content {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 10px;
+}
+
+.carousel-content img {
+  display: block;
+  width: 100%;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+  height: 100px;
+  margin-top: -50px;
+}
+
+.carousel-control .icon-next {
+  margin-right: 0;
+}
+
+.carousel-control .icon-prev:before, 
+.carousel-control .icon-next:before {
+  font-size: 100px;
+}
+
+.booking-content {
+  
+}
+
+.header1 {
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header2 {
+  font-size: 21px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header3 {
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.details {
+  font-size: 16px;
+  text-align: center;
+}
+
+.carousel-inner {
+  max-height: 420px;
+}
+
+.destination-content {
+  position: absolute;
+  left: 0;
+  top: 210px;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 110px;  
+  z-index: 10;
+  text-align: center;
+}
+
+.destination-content .header1,
+.destination-content .header2,
+.destination-content .header3,
+.destination-content .details {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+}
+
+.destination-content .header1 {
+  cursor: pointer;
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+  transition: all .2s;
+}
+
+.destination-content .header1:hover {
+  color: black;
+  background-color: white;
+}
+
+.destination-content .header2 {
+  
+}
+
+.destination-content .header3 {
+  
+}
+
+.booking-buttons {
+  text-align: center;
+}
+
+.bottom-navs {
+  background-color: #ffffff;
+  border-top: 1px solid #000000;
+  height: 45px;
+  text-align: center;  
+}
+
+.bottom-navs a,
+.bottom-navs span {
+  font-size: 16px;  
+  display: inline-block;
+  line-height: 45px;
+}
+
+.bottom-navs a {
+  color: #069fef;
+  cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.bottom-navs span {
+  margin: 0 10px;
+}
+
+.booking-buttons {
+  margin-bottom: 30px;
+}
+
+.form-creation {
+
+}
+
+.form-creation label {
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+}
+
+.form-creation .creation-question {
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-creation .form-buttons {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-creation .form-buttons button {
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.form-creation .form-buttons button:hover {
+  border: 1px solid #000000;
+}
+
+.booking-buttons button {
+  border-color: transparent;
+  width: 200px;
+}
+
+.accommodation,
+.activity {
+  height: 240px;
+  overflow: hidden;  
+  padding: 15px;
+}
+
+.accommodation-inner {
+  background-color: black;
+  height: 100%;
+}
+
+.accommodation img,
+.activity img {
+  width: 100%;
+  height: 100%;
+}
+
+.approval-data-content {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.activity-content {
+  padding: 0;
+}
+
+.activity-content img {
+  width: 100%;
+}
+
+.approve-status {
+  text-align: center;
+}
+
+.approve-status span {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.approve-status span.active {
+  border: 2px solid #069fef;
+}
+
+.group-user-list {
+  padding: 0;
+}
+
+.group-user-list li {
+  font-size: 18px;
+  list-style: none;
+  text-align: center;
+}
+
+.see-more {
+  color: #000000;
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.today-date-content {
+  background-color: #069fef;
+  margin: 0 -15px;
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.today-month {
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+
+.today-date {
+  font-size: 75px;
+  margin: 0;
+}
+
+.event-time {
+  font-size: 18px;
+  text-align: center;
+}
+
+.calendar-content .fc-event {
+  background-color: #069fef;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.calendar-content .fc-event .fc-content {
+  display: none;
+}
+
+.email-preferred {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-preferred .btn {
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 2px;
+  color: #333;
+}
+
+.email-preferred .btn.selected {
+  border-color: #1c1c1c;
+}
+
+#header {
+	margin-bottom: 25px;
+}
+
+#header #header-bar {
+	line-height: 60px;
+	font-size: 30px;
+}
+
+a {
+    cursor: pointer!important;
+}
+.no-margin {
+	margin: 0!important;
+}
+
+.text-right {
+	text-align: right;
+	margin-top: 5px;
+}
+
+.carousel-content.activity-daytime {
+  max-height: 420px;
+  overflow: hidden;
+}
+
+.summary-item {
+  margin-bottom: 15px;
+}
+
+.summary-item img {
+  width: 100%;
+}
+
+.summary-item .title {
+  font-size: 21px;
+}

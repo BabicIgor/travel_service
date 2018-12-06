@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="step-flow">
+		    <img src="../../../../../assets/img/flow/flow-packages.png">
+		</div>
+	
+		<h1 class="booking-page-title">1 on 1 Creation</h1>
+		<div class="row booking-content">
+		    <div class="col-xs-10 col-xs-offset-1">
+		        <one-on-one-creation-form [oneOnOneCreation]="oneOnOneCreation">
+		        </one-on-one-creation-form>
+		    </div>
+		</div>
+		<div class="booking-buttons">
+		    <button (click)="submit()" class="btn btn-default creation-submit">Submit</button>
+		</div>
+		<div class="bottom-navs">
+			<a (click)="back()">Back</a>
+		</div>
+	</div>
+</div>

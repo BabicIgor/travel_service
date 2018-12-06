@@ -1,0 +1,29 @@
+{
+  "account": {
+    "name": "John Doe",
+    "phone": "(786) 555 - 7777",
+    "email": "john.doe@gmail.com",
+    "password": "myPassword"
+  },
+  "group": {
+    "package": {
+      "id": 1
+    },
+    "travelStartDate": "2017-10-15",
+    "travelEndDate": "2017-10-23",
+    "members": [
+      {
+        "name": "Dan Doe",
+        "phone": "(768) 999 - 9999",
+        "email": "dan.doe@gmail.com",
+        "departureCity": "Miami"
+      },
+      {
+        "name": "Nick Doe",
+        "phone": "(768) 999 - 2222",
+        "email": "nick.doe@gmail.com",
+        "departureCity": "Miami"
+      }
+    ]
+  }
+}

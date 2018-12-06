@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="booking-page-title">Calendar</h1>
+		<div class="today-date-content">
+			<p class="today-month">{{todayMonth}}</p>
+			<p class="today-date">{{todayDate}}</p>
+		</div>
+		<div class="calendar-content" id="calendar">
+			<calendar [data]="calendarEventList" (eventSelected)="onSelected($event)"></calendar>
+		</div>
+		
+	</div>
+</div>

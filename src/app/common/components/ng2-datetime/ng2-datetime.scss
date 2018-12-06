@@ -1,0 +1,44 @@
+.datepicker-days, .datepicker-months, .datepicker-years{
+    padding: 15px;
+    
+    .prev, .next {
+        background: #60bc4f;
+        text-align: center;
+        border-radius: 3px;
+        color: #fff;
+    }
+
+    .datepicker-switch {
+        text-align: center;
+    }
+
+    .old.day, .new.day {
+        color: #6f6f6f;
+        background: #eee;
+    }
+    
+    .today.day {
+        background: #ff6318;
+        color: #fff;
+    }
+
+    .dow {
+        color: #6f6f6f;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        td {
+            padding: 0 10px!important;            
+            text-align: center;
+            cursor: pointer;
+        }
+    } 
+
+}
+
+
+.ng2-datetime *[hidden] { display: none; }

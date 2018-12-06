@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="step-flow">
+		  	<img src="../../../../../assets/img/flow/flow-packages.png">
+		</div>
+		
+		<h1 class="booking-page-title">{{package.name }}</h1>
+		<div class="carousel-content">
+			<carousel>
+			  <slide *ngFor="let image of package.images">
+			    <img [src]="image.uri" />
+			  </slide>
+			</carousel>
+		</div>
+		<div class="booking-content">
+			<p class="header1">{{package.header1}}</p>
+			<p class="header2">{{package.header2}}</p>
+			<p class="header3">{{package.header3}}</p>
+			<p class="details">{{package.text}}</p>
+		</div>
+		<!--
+		<div class="booking-buttons">
+		  <button (click)="submit()" class="btn btn-default package-to-cart">Add to Cart</button>
+		</div>
+		-->
+		<div class="form-group">
+			<input type="checkbox" [(ngModel)]="checkTravel" />
+			<label>Consult With a Travel Specialist</label>
+        </div>
+		<div class="form-group">
+            <h5 *ngIf="checkTravel">A travel specialist will contact you within 24hrs</h5>
+        </div>
+		<div class="bottom-navs">
+			<a (click)="back()">Back</a>
+			<span>/</span>
+			<a (click)="next()">Next</a>
+		</div>
+	</div>
+</div>

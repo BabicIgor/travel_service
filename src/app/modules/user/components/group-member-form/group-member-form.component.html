@@ -1,0 +1,83 @@
+<form [formGroup]="form" novalidate>
+    <div class="form-group row">
+        <label class="col-xs-3 text-right" for="txtName">Name:</label>
+        <div class="col-xs-9">
+			
+            <input class="form-control"
+                   formControlName="name"
+                   id="txtName"
+                   [(ngModel)]="groupMember.name"
+                   [validationTooltip]="form.get('name')"
+                   [validationMessages]="validationMessages['name']"
+                   type="text" >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-xs-3 text-right" for="txtPhone">Phone:</label>
+        <div class="col-xs-9">
+		
+            <input class="form-control"
+                   formControlName="phone"
+                   id="txtPhone"
+                   [(ngModel)]="groupMember.phone"
+                   [validationTooltip]="form.get('phone')"
+                   [validationMessages]="validationMessages['phone']"
+                   type="text"  > 
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-xs-3 text-right" for="txtEmail">Email:</label>
+        <div class="col-xs-9">
+            <input class="form-control"
+                   formControlName="email"
+                   id="txtEmail"
+                   [(ngModel)]="groupMember.email"
+                   [validationTooltip]="form.get('email')"
+                   [validationMessages]="validationMessages['email']"
+                   type="text" >
+        </div>
+    </div>
+    
+<!--      <div class="form-group row">
+    <label class="col-xs-3 text-right" for="txtPassword">Password:</label>
+    <div class="col-xs-9">
+      <input class="form-control"
+             (keyup)="passwordChange()"
+             formControlName="password"
+             id="txtPassword"
+             [(ngModel)]="groupMember.password"
+             [validationTooltip]="form.get('password')"
+             [validationMessages]="validationMessages['password']"
+             type="password">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-xs-3 text-right" for="txtPasswordConfirmation">Password Confirmation:</label>
+    <div class="col-xs-9">
+      <input class="form-control"
+             formControlName="passwordConfirmation"
+             id="txtPasswordConfirmation"
+             [validationTooltip]="form.get('passwordConfirmation')"
+             [validationMessages]="validationMessages['passwordConfirmation']"
+             type="password">
+    </div>
+
+  </div>  -->
+  
+    <div class="form-group row">
+        <label class="col-xs-3 text-right" for="txtDepartureCity">Departure City:</label>
+        <div class="col-xs-9">
+            <input class="form-control"
+                   formControlName="departureCity"
+                   id="txtDepartureCity"
+                   [(ngModel)]="groupMember.departureCity"
+                   [validationTooltip]="form.get('departureCity')"
+                   [validationMessages]="validationMessages['departureCity']"
+                   type="text">
+        </div>
+    </div>
+	
+	<div class="text-center form-group">
+		<a>Share Facebook</a>
+	</div>
+</form>

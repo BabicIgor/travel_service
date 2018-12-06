@@ -1,0 +1,32 @@
+<style>
+	.fit_image{
+		height:420px !important;
+	}
+</style>
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="step-flow">
+		  <img src="../../../../../assets/img/flow/flow-destinations.png">
+		</div>
+		
+		<h1 class="booking-page-title">Destinations</h1>
+		<div class="row">
+			<div class="col-xs-12" *ngFor="let destination of destinationList; let index = index">
+				<div class="carousel-content">
+					<carousel>
+					  <slide *ngFor="let image of destination.images">
+					    <img [src]="image.uri" class="fit_image" />
+					    <div class="destination-content">
+					      <h1 class="header1" (click)="onSelect(destination)">{{destination.header1}}</h1>
+					      <h2 class="header2" (click)="onSelect(destination)">{{destination.header2}}</h2>
+					      <h3 class="header3" (click)="onSelect(destination)">{{destination.header3}}</h3>
+					      <p class="details">{{destination.text}}</p>
+					    </div>
+					  </slide>
+					</carousel>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

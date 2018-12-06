@@ -1,0 +1,17 @@
+
+.groupleader {
+    a.btn{
+        color: #000;
+        background: #fff;
+        border-width: 0;
+        
+        &.selected {
+          background-color: #fff;
+          color: #029aef;
+          border-width: 3px;
+        }
+
+        &:hover {
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="step-flow">
+	    <img src="../../../../../assets/img/flow/flow-accomodation.png">
+	</div>
+	
+	<h1 class="booking-page-title">Transportation</h1>	
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-6 accommodation" *ngFor="let transportation of transportationList; let index = index">
+			<div class="accommodation-inner">
+			    <img [src]="transportation.images[0].uri" />
+	            <div class="booking-name" (click)="onSelect(transportation)">
+	                {{transportation.name}}
+	                <p class="accommodation-text">{{transportation.text}}</p>
+	            </div>
+            </div>
+        </div>
+	</div>
+	<div class="bottom-navs">
+		<a (click)="back()">Back</a>
+	</div>
+</div>

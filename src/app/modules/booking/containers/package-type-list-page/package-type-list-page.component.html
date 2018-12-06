@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-md-12">
+		
+		<div class="step-flow">
+		    <img src="../../../../../assets/img/flow/flow-packages.png">
+		</div>
+		
+		<h1 class="booking-page-title">Packages</h1>
+		<div class="carousel-content" *ngFor="let packageType of packageTypeList; let index = index">
+		    <carousel>
+		        <slide *ngFor="let image of packageType.images">
+		            <img [src]="image.uri" />
+		            <div class="booking-name" (click)="onSelect(packageType)">
+		                {{packageType.name}}
+		            </div>
+		        </slide>
+		    </carousel>
+		</div>
+		<div class="bottom-navs">
+			<a (click)="back()">Back</a>
+		</div>
+	</div>
+</div>

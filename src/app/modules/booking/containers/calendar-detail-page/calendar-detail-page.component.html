@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="booking-page-title">Calendar</h1>
+		<div class="today-date-content">
+			<p class="today-month">{{selMonth}}</p>
+			<p class="today-date">{{selDate}}</p>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Activities</h1>
+				<p class="event-time" *ngFor="let eventActivity of calendarEvent.eventActivities; let index = index">
+					{{eventActivity.eventTime}} {{eventActivity.activity.name}}
+				</p>
+			</div>
+		</div>
+		<div class="bottom-navs">
+			<a (click)="back()">Back</a>
+		</div>	
+	</div>
+</div>

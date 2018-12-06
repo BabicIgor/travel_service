@@ -1,0 +1,33 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="step-flow">
+		    <img src="../../../../../assets/img/flow/flow-approval.png">
+		</div>
+		<h1 class="booking-page-title">Group Approval</h1>
+		<div class="row approval-data-content" *ngFor="let approvalData of approvalList; let index = index">
+			<div class="col-xs-6 activity-content">
+				<img [src]="approvalData.activity.image.uri" />
+	            <div class="booking-name">
+	                {{approvalData.activity.name}}
+	            </div>
+			</div>
+			<div class="col-xs-6">
+				<div class="approve-status">
+					<span [ngClass]="{active: approvalData.activityApprove=='1'}">Yes</span>
+					<span [ngClass]="{active: approvalData.activityApprove=='2'}">No</span>
+					<span [ngClass]="{active: approvalData.activityApprove=='3'}">Not Attending</span>
+				</div>
+				<ul class="group-user-list">
+					<li *ngFor="let user of approvalData.users">
+						<span class="user-name">{{user.name}}</span>:
+						<img [src]="user.approve ? '../../../../../assets/img/booking/valid.png' : '../../../../../assets/img/booking/invalid.png'" />
+					</li>
+				</ul>
+				<a class="see-more">See more -></a>
+			</div>
+		</div>
+		<div class="bottom-navs">
+			<a (click)="checkCalendar()">Calendar</a>
+		</div>
+	</div>
+</div>

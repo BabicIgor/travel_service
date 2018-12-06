@@ -1,0 +1,28 @@
+<form [formGroup]="form" novalidate>
+  <div class="form-group row">
+    <label class="col-xs-3 text-right" for="txtGroupSize">Group Size:</label>
+    <div class="col-xs-9">
+      <input class="form-control"
+             formControlName="groupSize"
+             id="txtGroupSize"
+             [(ngModel)]="group.groupSize"
+             [validationMessages]="validationMessages['groupSize']"
+             [validationTooltip]="form.get('groupSize')"
+             type="text">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-xs-3 text-right">Travel Dates:</label>
+    <div class="col-xs-4">
+      
+		<datetime [type]="true" [travelDate]="group.travelStartDate" [datepicker]="{format: 'mm-dd-yyyy', todayHighlight: true, hideIcon: true}" formControlName ="travelStartDate" [validationMessages]="validationMessages['travelStartDate']" [validationTooltip]="form.get('travelStartDate')" (dateUpdated)="onStartDateUpdated($event)"></datetime>
+    </div>
+    <div class="col-xs-1">
+		<span style="line-height: 30px"> &mdash; </span>
+    </div>
+    <div class="col-xs-4">
+     
+	<datetime [type]="true" [travelDate]="group.travelEndDate" [datepicker]="{format: 'mm-dd-yyyy', todayHighlight: true, hideIcon: true}" formControlName ="travelEndDate" [validationMessages]="validationMessages['travelEndDate']" [validationTooltip]="form.get('travelEndDate')"  (dateUpdated)="onEndDateUpdated($event)"></datetime>
+    </div>
+  </div>  
+</form>

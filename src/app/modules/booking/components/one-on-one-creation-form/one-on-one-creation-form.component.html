@@ -1,0 +1,76 @@
+<form [formGroup]="form" class="form-creation" novalidate>
+  <div class="row form-group">
+    <div class="col-xs-3">
+      <label for="txtName">Name:</label>
+    </div>
+    <div class="col-xs-9">
+      <input class="form-control"
+           formControlName="name"
+           id="txtName"
+           [(ngModel)]="oneOnOneCreation.name"
+           [validationTooltip]="form.get('name')"
+           [validationMessages]="validationMessages['name']"
+           type="text">
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-xs-3">
+      <label for="txtPhone">Phone:</label>
+    </div>
+    <div class="col-xs-9">
+      <input class="form-control"
+           formControlName="phone"
+           id="txtPhone"
+           [(ngModel)]="oneOnOneCreation.phone"
+           [validationTooltip]="form.get('phone')"
+           [validationMessages]="validationMessages['phone']"
+           type="text">
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-xs-3">
+      <label for="txtEmail">Email:</label>
+    </div>
+    <div class="col-xs-9">
+      <input class="form-control"
+           formControlName="email"
+           id="txtEmail"
+           [(ngModel)]="oneOnOneCreation.email"
+           [validationTooltip]="form.get('email')"
+           [validationMessages]="validationMessages['email']"
+           type="text">
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-xs-3">
+      <label for="txtTime">Time:</label>
+    </div>
+    <div class="col-xs-9">
+      <datetime [type]="false" [timepicker]="{hideIcon: true}" formControlName ="time" [validationTooltip]="form.get('time')" [validationMessages]="validationMessages['time']" (timeUpdated)="onEventTimeUpdated($event)"></datetime>
+      <!--
+      <input class="form-control"
+           formControlName="time"
+           id="txtTime"
+           [(ngModel)]="oneOnOneCreation.time"
+           [validationTooltip]="form.get('time')"
+           [validationMessages]="validationMessages['time']"
+           type="text">
+         -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="creation-question">Would you prefer us to email you instead?</p>
+      <div class="email-preferred">
+        <a (click)="setEmailPreferred(true)"
+                [ngClass]="{selected: oneOnOneCreation.emailPreferred === true}" class="btn">
+          Yes
+        </a>
+        <a (click)="setEmailPreferred(false)"
+                [ngClass]="{selected: oneOnOneCreation.emailPreferred === false}" class="btn">
+          No
+        </a>
+      </div>
+    </div>
+  </div>
+</form>

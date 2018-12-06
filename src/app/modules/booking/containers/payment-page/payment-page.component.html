@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="step-flow">
+        <img src="../../../../../assets/img/flow/flow-activities.png">
+    </div>
+
+    <h1 class="booking-page-title">Checkout Payment</h1>
+
+    <div class="row summary-items">
+        <div class="col-md-12 col-sm-12 summary-item">
+            <div class="row">
+                <form [formGroup]="form" novalidate>
+
+
+                    <div class="form-group row">
+                        <label class="col-xs-3 text-right" for="txtCardNum">Card Number:</label>
+                        <div class="col-xs-6">
+                            <input class="form-control" formControlName="groupSize" id="txtCardNum" [(ngModel)]="credit.cardnum" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-xs-3 text-right" for="txtCardExpiration">Card Expiration Date:</label>
+                        <div class="col-xs-6">
+                            <input class="form-control" formControlName="groupSize" id="txtCardExpiration" [(ngModel)]="credit.cardexpire" type="text">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label class="col-xs-3 text-right" for="txtCardCvv">Card CVV Security Code:</label>
+                        <div class="col-xs-6">
+                            <input class="form-control" formControlName="groupSize" id="txtCardCvv" [(ngModel)]="credit.cardcvv" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-xs-3 text-right" for="txtAmount">Amount:</label>
+                        <div class="col-xs-6">
+                            <input class="form-control" formControlName="groupSize" id="txtAmount"   [(ngModel)]="credit.cardamount" type="text">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom-navs">
+        <a (click)="back()">Back</a>
+        <span>/</span>
+        <a (click)="checkout()">Checkout Payment</a>
+    </div>
+</div>

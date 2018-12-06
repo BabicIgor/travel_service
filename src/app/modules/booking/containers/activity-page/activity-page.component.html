@@ -1,0 +1,55 @@
+<style>
+	.fit_image{
+		height:420px !important;
+	}
+</style>
+<div class="row">
+	<div class="col-md-12">       
+		
+		<div class="step-flow">
+		    <img src="../../../../../assets/img/flow/flow-activities.png">
+		</div>
+		
+		<h1 class="booking-page-title">{{activity.name }}</h1>
+        <h3 class="text-center ">$5 per Person</h3>
+        
+		<div class="carousel-content activity-daytime">
+			<img [src]="activity.image.uri" class="fit_image" />
+		</div>
+		<div class="booking-content">
+			<p class="details">{{activity.text}}</p>
+			<form novalidate>
+				<div class="form-group">
+					<label class="control-label">Activity Date:</label>
+					<label class="form-control" >{{eventDate}}</label>				
+				</div>
+				<div class="form-group">
+					<label class="control-label">Activity Time:</label>
+					<label class="form-control" >{{eventTime}}</label>
+				</div>
+			</form>
+		</div>
+        <div class="form-group text-center">          
+            <h3>Group: Michel Group</h3>          
+        </div>
+        <!-- <div class="form-group text-center">
+            <ul>
+                <li><a>Share Group</a></li>
+                <li><a>Send Mail</a></li>
+                <li><a>Get shareable link</a></li>
+            </ul>
+        </div> -->
+        <div class="form-group text-center">
+            <h5 *ngIf="!isdone">Ready to request approval from your BIDO agent?</h5>
+            <h5 *ngIf="isdone">Thank you. Your BIDO Events agent will contact you shortly to approve your journey!</h5>
+        </div>
+		<div class="booking-buttons" *ngIf="!isdone">
+		  <button (click)="goto()" class="btn btn-default package-to-cart">Let’s Go!</button>
+		</div>       
+		<div class="bottom-navs">			
+			<a (click)="back()">Back</a>
+			<span>/</span>
+			<a (click)="next()">Next</a>
+		</div>
+	</div>
+</div>
