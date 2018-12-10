@@ -44,6 +44,8 @@ import {IDENTITY_SERVICE_TOKEN} from './services/identity/contracts';
         TextMaskModule,
         LoginRoutingModule,
         EffectsModule.run(moduleEffects.AuthenticationEffects)
+
+        
     ],
     exports: [],
     declarations: [
